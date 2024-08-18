@@ -56,15 +56,14 @@ export default function Checkbox() {
         {
             checkBoxes.map((element)=>(
                 <div className='flex items-center gap-[12px] mb-[20px]' key={element.id}>
-                    <div onClick={()=>handleCheckBox(element)} className={`check ${element.checkVal ? "bg-[#000]" : "bg-[#fff]"}`}></div>
+                    <div onClick={()=>handleCheckBox(element)} className={`check ${element.checkVal ? "bg-[#4a4a4a]" : "bg-[#fff]"}`}></div>
                     <div className='text-[#000] text-[16px]'>{element.label}</div>
                 </div>
             ))
         }
-        <div className='flex items-center gap-[12px] mt-[40px]'>
-            <div onClick={handleAllCheckBox} className="check"></div>
-            <div className='text-[#000] text-[16px]'>Select All</div>
-        </div>
+        <button onClick={handleAllCheckBox} className='mt-[20px] bg-[#4a4a4a] text-[#fff] py-[12px] px-[20px] rounded-lg'>
+            Select All
+        </button>
       </div>
     </>
   );
