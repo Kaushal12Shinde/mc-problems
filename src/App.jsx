@@ -1,9 +1,9 @@
-import Checkbox from "./component/checkbox/Checkbox"
+import BoxComponent from "./component/box/BoxComponent"
 
 function App() {
   return (
     <>
-      <Checkbox/>
+     <BoxComponent/>
     </>
   )
 }

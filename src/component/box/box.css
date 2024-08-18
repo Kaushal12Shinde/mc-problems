@@ -1,0 +1,6 @@
+.Box {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 1px solid grey;
+    transition: all 0.3s ease-in;
+}
