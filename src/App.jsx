@@ -1,10 +1,9 @@
-import CarProductAcc from "./component/carProductAcc/CarProductAcc"
-
+import Checkbox from "./component/checkbox/Checkbox"
 
 function App() {
   return (
     <>
-      <CarProductAcc/>
+      <Checkbox/>
     </>
   )
 }

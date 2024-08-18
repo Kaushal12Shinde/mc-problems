@@ -1,0 +1,7 @@
+.check{
+    width: 25px;
+    height: 25px;
+    border: 0.5px solid #4a4a4a;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
