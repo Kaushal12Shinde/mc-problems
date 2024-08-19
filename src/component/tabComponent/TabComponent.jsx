@@ -17,6 +17,24 @@ export default function TabComponent() {
             mileage: "32 MPG",
             fuel_type: "Gasoline",
         },
+        accord:{
+            pricing: "$26,120",
+            color: "Black",
+            mileage: "33 MPG",
+            fuel_type: "Gasoline",
+        },
+        civic:{
+            pricing: "$21,250",
+            color: "White",
+            mileage: "36 MPG",
+            fuel_type: "Gasoline",
+        },
+        mustang:{
+            pricing: "$27,155",
+            color: "Yellow",
+            mileage: "24 MPG",
+            fuel_type: "Gasoline",
+        }
     };
 
     useEffect(() => {
@@ -52,6 +70,15 @@ export default function TabComponent() {
                 </button>
                 <button id='corolla' className='nav-tab' data-car="corolla">
                     Corolla
+                </button>
+                <button id='accord' className='nav-tab' data-car="accord">
+                    Accord
+                </button>
+                <button id='civic' className='nav-tab' data-car="civic">
+                    Civic
+                </button>
+                <button id='mustang' className='nav-tab' data-car="mustang">
+                    Mustang
                 </button>
             </div>
             <div className='px-[40px]'>
