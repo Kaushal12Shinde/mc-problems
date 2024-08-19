@@ -57,6 +57,11 @@ export default function TabComponent() {
         const container = document.querySelector('.tab-buttons-container');
         container.addEventListener('click', handleButtonClick);
 
+        const firstTab = document.querySelector('.nav-tab');
+        if (firstTab) {
+            firstTab.classList.add('active');
+        }
+
         return () => {
             container.removeEventListener('click', handleButtonClick);
         };
@@ -65,21 +70,13 @@ export default function TabComponent() {
     return (
         <>
             <div className='tab-buttons-container flex items-center gap-3 p-[40px]'>
-                <button id='camry' className='nav-tab active' data-car="camry">
-                    Camry
-                </button>
-                <button id='corolla' className='nav-tab' data-car="corolla">
-                    Corolla
-                </button>
-                <button id='accord' className='nav-tab' data-car="accord">
-                    Accord
-                </button>
-                <button id='civic' className='nav-tab' data-car="civic">
-                    Civic
-                </button>
-                <button id='mustang' className='nav-tab' data-car="mustang">
-                    Mustang
-                </button>
+                {
+                    Object.entries(carData).map(([key]) => (
+                        <button id={key} className='nav-tab capitalize' data-car={key}>
+                            {key}
+                        </button>
+                    ))
+                }
             </div>
             <div className='px-[40px]'>
                 {
