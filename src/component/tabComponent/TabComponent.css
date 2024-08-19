@@ -1,0 +1,9 @@
+.nav-tab{
+    padding: 12px 20px;
+    border: 0.5px solid #474747;
+    border-radius: 5px;
+}
+
+.nav-tab.active{
+    background-color: #c3c3c3;
+}

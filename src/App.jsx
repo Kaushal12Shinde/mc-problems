@@ -1,9 +1,9 @@
-import BoxComponent from "./component/box/BoxComponent"
+import TabComponent from "./component/tabComponent/TabComponent"
 
 function App() {
   return (
     <>
-     <BoxComponent/>
+      <TabComponent/>
     </>
   )
 }
