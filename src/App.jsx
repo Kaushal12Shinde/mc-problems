@@ -1,9 +1,9 @@
-import TabComponent from "./component/tabComponent/TabComponent"
+import ScrollComponent from "./component/scrollComponent/ScrollComponent"
 
 function App() {
   return (
     <>
-      <TabComponent/>
+      <ScrollComponent/>
     </>
   )
 }

@@ -1,0 +1,28 @@
+.progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #f3f3f3;
+    z-index: 1000;
+}
+
+/* Progress bar itself */
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+}
+
+/* Content to scroll through */
+.content {
+    height: 600vh;
+    padding: 20px;
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 20px 0;
+}
