@@ -1,9 +1,9 @@
-import ScrollComponent from "./component/scrollComponent/ScrollComponent"
+import BarChart from "./component/barGraph/BarChart"
 
 function App() {
   return (
     <>
-      <ScrollComponent/>
+     <BarChart/>
     </>
   )
 }
